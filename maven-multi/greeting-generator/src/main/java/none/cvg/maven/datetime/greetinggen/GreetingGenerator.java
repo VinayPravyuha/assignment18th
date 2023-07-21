@@ -8,12 +8,13 @@ public class GreetingGenerator {
 
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println(" Add operation  enter number 1");
-        int i=sc.nextInt();
-        System.out.println("enter number 2");
-        int j=sc.nextInt();
+        System.out.println(" Enter your name ");
+
+        String j=sc.nextLine();
         Greeting greeting = new Greeting();
-        System.out.println("\n" + greeting.greet());
-        System.out.println("\nadded number\n" + (i+j));
+        System.out.println(j +"\n" + greeting.greet());
+        System.out.print("\nEnter the message u need to hide:-");
+        sc.nextLine();
+        System.out.println("\nThe message has been saved ");
     }
 }
